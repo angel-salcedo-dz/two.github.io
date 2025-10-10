@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiii</title>
+
+  <script type="module" crossorigin src="./assets/index-oEw_GLO-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-TCiDelZs.css">
+</head>
+<body class="w-full h-full fixed bg-black flex justify-center items-center text-white text-2xl">
+    <div x-data="start">
+        <div x-text="salute"></div>
+    </div>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('start', () => ({
+                salute: 'hixd',
+            }))
+        })
+    </script>
+</body>
+
+</html>

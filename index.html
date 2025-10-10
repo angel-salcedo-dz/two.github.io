@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiii</title>
+
+    <link  href="app.css" rel="stylesheet"/>
+    <script type="module" src="app.js"></script>
+</head>
+<body class="w-full h-full fixed bg-black flex justify-center items-center text-white text-2xl">
+    <div x-data="start">
+        <div x-text="salute"></div>
+    </div>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('start', () => ({
+                salute: 'hixd',
+            }))
+        })
+    </script>
+</body>
+
+</html>
